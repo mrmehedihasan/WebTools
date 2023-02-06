@@ -35,7 +35,11 @@ body{
     border-bottom: 2px solid black;
     
 }
-
+.main-nav li:active{
+    
+    border-bottom: 2px solid black;
+    
+}
 .main-content__title{
     display: flex;
     justify-content: center;
