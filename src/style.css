@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    top: .1rem;
+    
+}
+body{
+    background-color: rgb(245, 245, 245) ;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    /* overflow:hidden; */
+    padding: 10px;
+}
+.main-nav li{
+    list-style: none;
+    float: left;
+    list-style-position:inside;
+    border-bottom: 2px solid salmon;
+}
+.main-nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(83, 83, 83);
+}
+.main-nav li:hover{
+    
+    border-bottom: 2px solid black;
+    
+}
+
+.main-content__title{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+.main-content__title h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.main-content__cards-view{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+
+}
+
+.card__main{
+    height: 310px;
+    width: 310px;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+}
+.card__main:hover{
+    box-shadow: 0 0 10px;
+}
+.card__main__figure img{
+    height: 90%;
+    width: 100%;
+}
+
+.main-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer {
+    width: 100%;
+    height : 60px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(250, 128, 114, 0.781);
+}
+
+.card__main__title h3{
+    font-size: 1.3rem;
+}
+.card__main__title p{
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .main-nav ul{
+        display: table;
+    }
+    .main-nav li{
+        width: 50%;
+        text-align: center;
+    }
+    
+    .main-content__title{
+        text-align: center;
+    }
+    .main-content__cards-view{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .main-content{
+        display: block;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-content__cards-view{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .main-content{
+        display: block;
+        height: auto;
+    }
+}
